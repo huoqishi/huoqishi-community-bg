@@ -1,0 +1,10 @@
+const express = require('express')
+const articleController = require('../controllers/articleController')
+const router = module.exports = express.Router()
+
+router.get('/articles', articleController.getArticles)
+router.get('/articles/:id', articleController.getArticlesDetail)
+router.post('/articles', articleController.postArticles)
+router.delete('/articles/:id', articleController.delArticles)
+router.patch('/articles/:id', articleController.patchArticles)
+router.put('/articles/:id', articleController.putArticles)

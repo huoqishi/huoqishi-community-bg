@@ -1,0 +1,24 @@
+{
+  "name": "huoqishi-community-bg",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index.js",
+    "build": "cross-env NODE_ENV=production node index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cross-env": "^5.1.3"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "jsonwebtoken": "^8.1.0",
+    "multer": "^1.3.0",
+    "mysql2": "^1.5.1",
+    "sequelize": "^4.29.0"
+  }
+}
